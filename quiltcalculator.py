@@ -111,31 +111,31 @@ class calculator(Frame):
         self.eq_bttn = Button(self, text="=", width=30, height=3, bg="Pink", command=lambda: self.calculate())
         self.eq_bttn.grid(row=4, column=0, columnspan=4)
 
-        self.ac_bttn = Button(self, text='Clear', width=9, height=3, bg='LightBlue', fg='black',command=lambda: self.clear_all())
+        self.ac_bttn = Button(self, text='Clear', width=6, height=2, bg='LightBlue', fg='black',command=lambda: self.clear_all())
         self.ac_bttn.grid(row=1, column=2)
 
-        self.c_bttn = Button(self, text='←', width=9, height=3, bg='LightBlue', fg='black',command=lambda: self.clear())
+        self.c_bttn = Button(self, text='←', width=6, height=2, bg='LightBlue', fg='black',command=lambda: self.clear())
         self.c_bttn.grid(row=2, column=2 )
 
-        self.add_bttn = Button(self, text="x", width=9, height=3,bg='LightBlue', fg='black', command=lambda: self.add_chr('*'))
+        self.add_bttn = Button(self, text="x", width=6, height=2,bg='LightBlue', fg='black', command=lambda: self.add_chr('*'))
         self.add_bttn.grid(row=3, column=2)
 
-        self.throw_bttn = Button(self, text="Throw", width=9, height=3,bg='LightBlue', fg='black', command=lambda: self.add_chr('5'))
+        self.throw_bttn = Button(self, text="Throw", width=6, height=2,bg='LightBlue', fg='black', command=lambda: self.add_chr('5'))
         self.throw_bttn.grid(row=2, column=0)
 
-        self.full_bttn = Button(self, text="Full", width=9, height=3, bg='LightBlue', fg='black',command=lambda: self.add_chr('8'))
+        self.full_bttn = Button(self, text="Full", width=6, height=2, bg='LightBlue', fg='black',command=lambda: self.add_chr('8'))
         self.full_bttn.grid(row=2, column=1)
 
-        self.queen_bttn = Button(self, text="Queen", width=9, height=3,bg='LightBlue', fg='black', command=lambda: self.add_chr('12'))
+        self.queen_bttn = Button(self, text="Queen", width=6, height=2,bg='LightBlue', fg='black', command=lambda: self.add_chr('12'))
         self.queen_bttn.grid(row=3, column=0)
 
-        self.king_bttn = Button(self, text="King", width=9, height=3,bg='LightBlue', fg='black', command=lambda: self.add_chr('14'))
+        self.king_bttn = Button(self, text="King", width=6, height=2,bg='LightBlue', fg='black', command=lambda: self.add_chr('14'))
         self.king_bttn.grid(row=3, column=1)
 
-        self.quarter_bttn = Button(self, text="1/4 Seam", width=9, height=3, bg='LightBlue', fg='black',command=lambda: self.add_chr(".25"))
+        self.quarter_bttn = Button(self, text="1/4 Seam", width=6, height=2, bg='LightBlue', fg='black',command=lambda: self.add_chr(".25"))
         self.quarter_bttn.grid(row=1, column=0)
 
-        self.half_bttn = Button(self, text="1/2 Seam", width=9, height=3, bg='LightBlue', fg='black',command=lambda: self.add_chr(".5"))
+        self.half_bttn = Button(self, text="1/2 Seam", width=6, height=2, bg='LightBlue', fg='black',command=lambda: self.add_chr(".5"))
         self.half_bttn.grid(row=1, column=1)
 
 root = Tk()
