@@ -6,7 +6,14 @@ Sprint 1
 - [x] Add project to excel sheet in excel
 
 Sprint 2
-- [ ] Begin code by defining measurements
-- [ ] add seam allowance
-- [ ] Add size for throw, full, queen, king 
-- [ ] Use int str to convert to yards od fabric
+- [x] Begin code by defining measurements
+- [x] add seam allowance
+- [x] Add size for throw, full, queen, king 
+- [x] Use int str to convert to yards od fabric
+
+Sprint 3
+- [ ] Add correct math for yards and seam allowance
+- [ ] Give ending amount of yards
+- [ ] Create output box on calculator
+- [ ] Fix design
+
