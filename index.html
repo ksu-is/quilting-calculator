@@ -1,0 +1,77 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Bubble Quilt Calculator</title>
+  <meta name="description" content="Calculator for Bubble Quilts">
+  <meta name="author" content="Brian Shourd">
+
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="main.js"></script>
+</head>
+
+<body>
+
+<form id="form" class="pure-form pure-form-aligned">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Bubble Quilt</legend>
+<p>All inputs are in inches. For information, visit the <a href="http://www.awaitingada.com/2012/10/new-and-improved-tutorial-bubble-quilt.html">Awaiting Ada Bubble Quilt tutorial</a>.</p>
+
+<!-- Text input-->
+<div class="pure-control-group">
+    <label for="length">Minimum quilt length</label>
+    <input id="length" name="length" placeholder="24" required="" type="text">
+</div>
+
+<!-- Text input-->
+<div class="pure-control-group">
+    <label for="width">Minimum quilt width</label>
+    <input id="width" name="width" placeholder="44" required="" type="text">
+</div>
+
+<!-- Text input-->
+<div class="pure-control-group">
+    <label for="numFabrics">Number of fabrics</label>
+    <input id="numFabrics" name="numFabrics" placeholder="4" type="text">
+</div>
+
+<!-- Text input-->
+<div class="pure-control-group">
+    <label for="fabricWidth">Width of cotton fabric</label>
+    <input id="fabricWidth" name="fabricWidth" placeholder="44" type="text">
+</div>
+
+<!-- Text input-->
+<div class="pure-control-group">
+    <label for="silkyFabricWidth">Width of silky fabric</label>
+    <input id="silkyFabricWidth" name="silkyFabricWidth" placeholder="44" type="text">
+</div>
+
+<!-- Button -->
+<div class="pure-controls">
+    <button type="submit" id="calculate" class="pure-button pure-button-primary">Submit</button>
+</div>
+
+</fieldset>
+</form>
+
+<div id="output"></div>
+
+<script id="outputTemplate" type="text/template">
+<p>In order to make a quilt of size <%= width %>x<%= length %> (not including ruffle), using <%= numFabrics %> different fabrics (with an equal number of puffs in each fabric), you will need to make <%= numPuffs %> puffs. Assuming that your cotton fabric is <%= fabricWidth %> inches wide, you will need <%= backFabricAmount %> inches of fabric for the backs of the puffs, and <%= frontFabricAmount %> inches of fabric in each fabric for the fronts of the puffs (you probably should include a little extra for waste and squaring up your pieces).</p>
+
+<p>If you want to include a ruffle, assuming that your silky fabric is <%= silkyFabricWidth %> inches wide, you will need to get <%= silkyFabricAmount %> inches of that fabric, and cut it into <%= numStripsSilky %> strips, each 8 inches wide.</p>
+</script>
+</body>
+</html>
