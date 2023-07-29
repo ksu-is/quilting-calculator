@@ -12,8 +12,8 @@ Sprint 2
 - [x] Use int str to convert to yards od fabric
 
 Sprint 3
-- [ ] Add correct math for yards and seam allowance
-- [ ] Give ending amount of yards
-- [ ] Create output box on calculator
-- [ ] Fix design
+- [x] Add correct math for yards and seam allowance
+- [x] Give ending amount of yards
+- [x] Create output box on calculator
+- [x] Fix design
 
